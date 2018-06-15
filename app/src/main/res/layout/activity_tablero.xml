@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:background="@drawable/border2">
+    android:layout_height="match_parent"
+    android:background="#C5CAE9">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:gravity="center">
 
 
     <LinearLayout
@@ -21,7 +25,7 @@
             android:id="@+id/resultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/border10"
+            android:background="@drawable/border2"
             android:layout_margin="10sp"
             android:textSize="30dp"
             android:gravity="center"
@@ -36,7 +40,6 @@
             android:id="@+id/c1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#4DD0E1"
             android:visibility="gone">
 
             <Button
@@ -47,7 +50,8 @@
                 android:clickable="false"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="20dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/button12"
@@ -57,7 +61,8 @@
                 android:background="@drawable/border10"
                 android:clickable="false"
                 android:text=""
-                android:textSize="20dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/button13"
@@ -67,7 +72,8 @@
                 android:clickable="false"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="20dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
         </TableRow>
 
@@ -86,7 +92,8 @@
                 android:clickable="false"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="20dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/button22"
@@ -96,7 +103,8 @@
                 android:clickable="false"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="20dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/button23"
@@ -106,7 +114,8 @@
                 android:clickable="false"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="20dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
         </TableRow>
 
@@ -124,7 +133,8 @@
                 android:clickable="false"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="20dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/button32"
@@ -134,7 +144,8 @@
                 android:clickable="false"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="20dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/button33"
@@ -144,7 +155,8 @@
                 android:clickable="false"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="20dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
         </TableRow>
 
@@ -165,6 +177,8 @@
     </LinearLayout>
 
     </TableLayout>
+
+</LinearLayout>
 
 
 
