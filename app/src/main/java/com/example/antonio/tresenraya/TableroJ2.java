@@ -415,10 +415,14 @@ public class TableroJ2 extends AppCompatActivity implements View.OnClickListener
     }
 
     public void mostrarTurno(){
-        if (persona && !jugador2)
+        if (persona && !jugador2) {
             resultado.setText("Tu Turno");
-        else if(jugador2 && !persona)
+            resultado.setBackgroundResource(R.drawable.border2);
+        }
+        else if(jugador2 && !persona) {
             resultado.setText("Turno del oponente");
+            resultado.setBackgroundResource(R.drawable.border3);
+        }
     }
 
     public void cambioTurno(){
