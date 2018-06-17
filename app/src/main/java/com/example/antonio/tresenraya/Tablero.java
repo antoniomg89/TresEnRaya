@@ -294,15 +294,7 @@ public class Tablero extends AppCompatActivity implements View.OnClickListener{
 
     public void turnoMaquina(){
         int posicion;
-        boton11.setClickable(false);
-        boton12.setClickable(false);
-        boton13.setClickable(false);
-        boton21.setClickable(false);
-        boton22.setClickable(false);
-        boton23.setClickable(false);
-        boton31.setClickable(false);
-        boton32.setClickable(false);
-        boton33.setClickable(false);
+        deshabilitarC();
 
         posicion = casillasNoMarcadas.get(turnoTresEnRaya.getPosicionTurnoMaquinav2(casillasNoMarcadas, casillasMarcadasJugador, casillasMarcadasMaquina));
         System.out.println("Posicion máquina: "+posicion);
