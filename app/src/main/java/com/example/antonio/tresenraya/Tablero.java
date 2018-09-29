@@ -166,6 +166,7 @@ public class Tablero extends AppCompatActivity implements View.OnClickListener{
 
             case 32:
                 boton32.setText("X");
+                //boton32.setCompoundDrawablesWithIntrinsicBounds(0,0,0,R.drawable.x);
                 boton32.setTextColor(Color.parseColor("#DD2C00"));
                 casillasMarcadas.add(32);
                 casillasMarcadasMaquina.add(32);
@@ -481,6 +482,7 @@ public class Tablero extends AppCompatActivity implements View.OnClickListener{
 
             case R.id.button32:
                 boton32.setText("O");
+                //boton32.setCompoundDrawablesWithIntrinsicBounds(0,0,0,R.drawable.o);
                 casillasMarcadas.add(32);
                 casillasMarcadasJugador.add(32);
                 casillasNoMarcadas.remove(casillasNoMarcadas.indexOf(32));

@@ -13,5 +13,13 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
+
+    }
+
+    @Test
+    public void comienzo_test(){
+        Turno turnoTresEnRaya = new Turno();
+        int comienzo = turnoTresEnRaya.getOrdenComienzo();
+        assertNotEquals(comienzo,3);
     }
 }

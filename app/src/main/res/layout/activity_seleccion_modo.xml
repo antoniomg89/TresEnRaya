@@ -6,20 +6,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#C5CAE9"
+    android:background="#00AEB2"
     tools:context=".SeleccionModo">
 
     <Button
         android:id="@+id/btnMaquina"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border2"
+        android:background="#FF7216"
         android:text="VS Máquina" />
 
     <Button
         android:id="@+id/btnJugador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border2"
+        android:background="#FF7216"
         android:text="VS Jugador" />
 </LinearLayout>

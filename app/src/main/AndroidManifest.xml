@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Tablero"
-            android:configChanges="keyboardHidden|orientation|screenSize" />
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"/>
 
         <activity android:name=".SeleccionModo" >
         <intent-filter>
@@ -22,7 +23,8 @@
 
         <activity
             android:name=".TableroJ2"
-            android:configChanges="keyboardHidden|orientation|screenSize" />
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"/>
 
     </application>
 

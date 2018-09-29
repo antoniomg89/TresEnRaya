@@ -417,11 +417,13 @@ public class TableroJ2 extends AppCompatActivity implements View.OnClickListener
     public void mostrarTurno(){
         if (persona && !jugador2) {
             resultado.setText("Tu Turno");
-            resultado.setBackgroundResource(R.drawable.border2);
+            //resultado.setBackgroundResource(R.drawable.border2);
+            resultado.setBackgroundColor(Color.parseColor("#1DFF72"));
         }
         else if(jugador2 && !persona) {
             resultado.setText("Turno del oponente");
             resultado.setBackgroundResource(R.drawable.border3);
+            resultado.setBackgroundColor(Color.parseColor("#FF0D00"));
         }
     }
 

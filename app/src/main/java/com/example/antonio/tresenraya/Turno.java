@@ -45,6 +45,76 @@ public class Turno {
         return pos;
     }
 
+    public int getPosicionTurnoMaquinaAnexa(List<Integer> listacasillasj, List<Integer> listacasillasm){
+        int casillas, pos, casillas2;
+
+        casillas = listacasillasj.get(0);
+        casillas2 = listacasillasm.get(0);
+        pos = 0;
+
+        switch(casillas2){
+
+            case 11:
+                if (casillas == 12 || casillas == 13)
+                    pos = 21;
+                else
+                    pos = 12;
+                break;
+            case 12:
+                if (casillas == 11 || casillas == 13)
+                    pos = 22;
+                else
+                    pos = 11;
+                break;
+            case 13:
+                if (casillas == 12 || casillas == 11)
+                    pos = 23;
+                else
+                    pos = 12;
+                break;
+            case 21:
+                if (casillas == 22 || casillas == 23)
+                    pos = 31;
+                else
+                    pos = 22;
+                break;
+            case 22:
+                if (casillas == 21 || casillas == 23)
+                    pos = 32;
+                else
+                    pos = 21;
+                break;
+            case 23:
+                if (casillas == 22 || casillas == 21)
+                    pos = 33;
+                else
+                    pos = 22;
+                break;
+            case 31:
+                if (casillas == 32 || casillas == 33)
+                    pos = 21;
+                else
+                    pos = 32;
+                break;
+            case 32:
+                if (casillas == 31 || casillas == 33)
+                    pos = 22;
+                else
+                    pos = 31;
+                break;
+            case 33:
+                if (casillas == 32 || casillas == 31)
+                    pos = 23;
+                else
+                    pos = 32;
+                break;
+
+
+        }
+
+        return pos;
+    }
+
     public int condicionVictoria(List<Integer> j, List<Integer> m, boolean tableroCompleto){
         int res = 3;
         if (j.size() >= 3) {
@@ -88,6 +158,10 @@ public class Turno {
         List<Integer> m = new ArrayList<Integer>();
         m.addAll(mm);
         int res = 0;
+
+        if (m.size()==1 && j.size()==1){
+            return nm.indexOf(getPosicionTurnoMaquinaAnexa(j,m));
+        }
 
 
         if(m.size()>=2){
@@ -278,6 +352,7 @@ public class Turno {
             }
 
         }
+
         System.out.println("No hay proximo movimiento");
         return getPosicionTurnoMaquina(nm);
     }
